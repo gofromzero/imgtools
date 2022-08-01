@@ -1,0 +1,125 @@
+{
+  "files": [
+    {
+      "baseimg": "./data/通用出口码.png",
+      "items": [
+        {
+          "type": 0,
+          "value": "测试出口",
+          "size": 60,
+          "point": {
+            "x": 596,
+            "y": 335
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [0, 0, 0],
+          "font": "C:\\Windows\\Fonts\\msyhbd.ttc"
+        },
+        {
+          "type": 1,
+          "value": "http://test",
+          "size": 550,
+          "point": {
+            "x": 596,
+            "y": 763
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [0, 0, 0],
+          "font": ""
+        },
+        {
+          "type": 0,
+          "value": "测试物业",
+          "size": 65,
+          "point": {
+            "x": 660,
+            "y": 1400
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [ 32, 143, 66 ],
+          "font": "C:\\Windows\\Fonts\\msyhbd.ttc"
+        },
+        {
+          "type": 2,
+          "value": "./data/logo.jpg",
+          "size": 65,
+          "point": {
+            "x": 460,
+            "y": 1450
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [ 32, 143, 66 ],
+          "scale": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "baseimg": "./data/通用场内码.png",
+      "items": [
+        {
+          "type": 1,
+          "value": "http://test",
+          "size": 550,
+          "point": {
+            "x": 596,
+            "y": 763
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [0, 0, 0],
+          "font": ""
+        },
+        {
+          "type": 0,
+          "value": "测试物业",
+          "size": 65,
+          "point": {
+            "x": 660,
+            "y": 1400
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [ 32, 143, 66 ],
+          "font": "C:\\Windows\\Fonts\\msyhbd.ttc"
+        },
+        {
+          "type": 2,
+          "value": "./data/logo.jpg",
+          "size": 65,
+          "point": {
+            "x": 460,
+            "y": 1450
+          },
+          "apoint": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "rgb": [ 32, 143, 0 ],
+          "scale": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}
