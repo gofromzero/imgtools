@@ -130,13 +130,13 @@ func (f *Items) Draw(dc *gg.Context) (err error) {
 			return
 		}
 
-		qrgg := gg.NewContextForImage(qrc.Image(int(f.Size)))
-		qrgg.DrawCircle(0, 0, 500)
-		qrgg.Clip()
-		qrgg.Fill()
+		//qrgg := gg.NewContextForImage(qrc.Image(int(f.Size)))
+		//qrgg.DrawCircle(0, 0, 500)
+		//qrgg.Clip()
+		//qrgg.Fill()
 
 		qrc.DisableBorder = true
-		dc.DrawImageAnchored(qrgg.Image(), int(f.Point.X), int(f.Point.Y), f.APoint.X, f.APoint.Y) // 二维码
+		dc.DrawImageAnchored(qrc.Image(int(f.Size)), int(f.Point.X), int(f.Point.Y), f.APoint.X, f.APoint.Y) // 二维码
 	case img: // 图片
 		var itemImg image.Image
 		itemImg, err = gg.LoadImage(f.Value)
