@@ -46,7 +46,7 @@ func main() {
 			log.Fatalf("files %d err: %v", i, err.Error())
 		}
 	}
-	outdir := "out_" + time.Now().Format("2006_01_02_15_04_05")
+	outdir := "out_" + time.Now().Format("20060102_150405")
 	CreateDir(outdir)
 
 	total := len(cfg.Files)

@@ -26,7 +26,7 @@ func (f *ImgFile) CheckParams() (err error) {
 	for i, item := range f.Items {
 		err = item.CheckParams()
 		if err != nil {
-			fmt.Errorf(" No. %d err: %v", i, err.Error())
+			err = fmt.Errorf(" No. %d err: %v", i, err.Error())
 			return
 		}
 	}
@@ -129,8 +129,14 @@ func (f *Items) Draw(dc *gg.Context) (err error) {
 			log.Printf("could not generate QRCode: %v", err)
 			return
 		}
+
+		qrgg := gg.NewContextForImage(qrc.Image(int(f.Size)))
+		qrgg.DrawCircle(0, 0, 500)
+		qrgg.Clip()
+		qrgg.Fill()
+
 		qrc.DisableBorder = true
-		dc.DrawImageAnchored(qrc.Image(int(f.Size)), int(f.Point.X), int(f.Point.Y), f.APoint.X, f.APoint.Y) // 二维码
+		dc.DrawImageAnchored(qrgg.Image(), int(f.Point.X), int(f.Point.Y), f.APoint.X, f.APoint.Y) // 二维码
 	case img: // 图片
 		var itemImg image.Image
 		itemImg, err = gg.LoadImage(f.Value)
