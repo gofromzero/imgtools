@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/gofromzero/imgtools/compare/v1.0.0...v1.1.0) (2022-08-02)
+
+
+### Features
+
+* **clip:** temp remove clip ([9e64e7d](https://github.com/gofromzero/imgtools/commit/9e64e7dede3c8876c36248eae066326890645bae))
+
 ## 1.0.0 (2022-08-02)
 
 
